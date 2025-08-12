@@ -10,4 +10,5 @@ if (nomeDoAmigo === '') {
     }
     amigos.push(nomeDoAmigo);
     document.getElementById('amigo').value = "";
+    lista.innerHTML = "";
 }
