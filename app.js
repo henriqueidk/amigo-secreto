@@ -8,4 +8,5 @@ if (nomeDoAmigo === '') {
         return;
     }
     amigos.push(nomeDoAmigo);
+    document.getElementById('amigo').value = "";
 }
