@@ -1,4 +1,5 @@
 let amigos = [];
+let lista = document.getElementById('listaAmigos');
 
 function adicionarAmigo() {
     let nomeDoAmigo = document.getElementById('amigo').value.trim();
