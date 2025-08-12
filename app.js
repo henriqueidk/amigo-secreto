@@ -7,4 +7,5 @@ if (nomeDoAmigo === '') {
         alert('Por favor, insira um nome!');
         return;
     }
+    amigos.push(nomeDoAmigo);
 }
