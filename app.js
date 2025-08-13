@@ -21,4 +21,7 @@ function sortearAmigo() { // função para o botão "Sortear amigo"
         alert('Não há amigos para sortear :|'); // notifica se ela estiver vazia
         return; // encerra a função aqui mesmo
     }
+
+    let indiceAleatorio = Math.floor(Math.random() * amigos.length); // gera um índice aleatório da lista de amigos [NE em partes]
+    let amigoSorteado = amigos[indiceAleatorio]; // acessa o nome correspondente ao índice que foi sorteado
 }
