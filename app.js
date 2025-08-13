@@ -26,5 +26,5 @@ function sortearAmigo() { // função para o botão "Sortear amigo"
     let indiceAleatorio = Math.floor(Math.random() * amigos.length); // gera um índice aleatório da lista de amigos [NE em partes]
     let amigoSorteado = amigos[indiceAleatorio]; // acessa o nome correspondente ao índice que foi sorteado
 
-    document.getElementById('resultado').innerHTML = `Seu amigo secreto é ${amigoSorteado} :D`;
+    document.getElementById('resultado').innerHTML = `Seu amigo secreto é ${amigoSorteado} :D`; // mostra o resultado do sorteio
 }
