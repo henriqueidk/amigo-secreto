@@ -15,6 +15,7 @@ function adicionarAmigo() { // função para o botão "Adicionar"
     for (let i = 0; i < amigos.length; i++) { // loop que percorre toda a lista de amigos [NÃO ENSINADO]
     lista.innerHTML += `<li>${amigos[i]}</li>`; // Adiciona cada nome como um <li> na lista [NÃO ENSINADO]
     }
+}
 
 function sortearAmigo() { // função para o botão "Sortear amigo"
     if (amigos.length === 0) { // verifica se a lista de amigos está vazia
@@ -24,5 +25,6 @@ function sortearAmigo() { // função para o botão "Sortear amigo"
 
     let indiceAleatorio = Math.floor(Math.random() * amigos.length); // gera um índice aleatório da lista de amigos [NE em partes]
     let amigoSorteado = amigos[indiceAleatorio]; // acessa o nome correspondente ao índice que foi sorteado
-    }
+
+    document.getElementById('resultado').innerHTML = `Seu amigo secreto é ${amigoSorteado} :D`;
 }
